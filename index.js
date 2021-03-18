@@ -1,3 +1,5 @@
-import { run } from './YahooFinance.js'
+import { price, prices } from './YahooFinance.js'
 
-run("SQ")
+price('SQ')
+
+prices(['SQ', 'SE', 'TDOC']).then(d => console.log(d))
